@@ -16,7 +16,7 @@
 
   <div class="container">
   <!-- Sidebar start -->
-   <div class="row">
+   <div class="row" id="main">
     <div class="col-lg-3">
 <nav>
   <ul class="nav flex-column">
@@ -47,23 +47,30 @@
   <!-- Step 1 start -->
   <form>
 
+    <div id="step1">
   <h1>Personal info</h1>
+  <p>
   Please provide your name, email address, and phone number.
+  </p>
 
-  Name
-  e.g. Stephen King
+  <label class="form-label">Name</label>
+  <input class="form-control" placeholder="e.g. Stephen King">
 
-  Email Address
-  e.g. stephenking@lorem.com
+<label class="form-label">Email Address</label>
+  <input class="form-control" placeholder="stephenking@lorem.com">
 
-  Phone Number
-  e.g. +1 234 567 890
+  <label class="form-label">Phone Number</label>
+  <input class="form-control" placeholder="+1 234 567 890">
 
+  <button class="btn btn-primary float-end">
   Next Step
+  </button>
+  </div>
 
   <!-- Step 1 end -->
 
   <!-- Step 2 start -->
+   <div id="step2" class="d-none">
 
   <h1>Select your plan</h1>
   You have the option of monthly or yearly billing.
@@ -79,14 +86,20 @@
 
   Monthly
   Yearly
-
+<button>
   Go Back
+</button>
+
+<button>
   Next Step
+  </button>
+  </div>
 
   <!-- Step 2 end -->
 
   <!-- Step 3 start -->
 
+  <div id="step3" class="d-none">
   <h1>Pick add-ons</h1>
   Add-ons help enhance your gaming experience.
 
@@ -102,13 +115,19 @@
   Custom theme on your profile
   +$2/mo
 
+ <button>
   Go Back
+</button>
+
+<button>
   Next Step
+  </button>
 
   <!-- Step 3 end -->
+   </div>
 
   <!-- Step 4 start -->
-
+<div id="step4" class="d-none">
   <h1>Finishing up</h1>
   Double-check everything looks OK before confirming.
 
@@ -116,13 +135,18 @@
 
   Total (per month/year)
 
+<button>
   Go Back
-  Confirm
+</button>
+
+<button>
+ Confirm
+  </button>
 
   <!-- Step 4 end -->
-
+</div>
   <!-- Step 5 start -->
-
+<div id="step5" class="d-none">
   Thank you!
 
   Thanks for confirming your subscription! We hope you have fun 
@@ -130,6 +154,7 @@
   to email us at support@loremgaming.com.
 
   <!-- Step 5 end -->
+   </div>
   </form>
   </div>
   </div>
