@@ -18,37 +18,40 @@
     <div class="row align-items-center" id="main">
   <!-- Sidebar start -->
    
-    <div class="col-lg-3">
+    <div class="col-lg-3 d-flex align-items-center" style="min-height:100vh;">
       
-<nav>
-  <img src="assets/images/bg-sidebar-desktop.svg">
-  <ul class="nav flex-column">
-    <li>
+<nav class="p-4 w-100 d-flex flex-column  align-items-center" id="navigation">
+ 
+  <ol class="nav flex-column list-circles">
+    <li class="nav-item">
   Step 1 <br>
-  Your info
+  <strong>Your info</strong>
   </li>
-<li>
+<li class="nav-item">
   Step 2<br>
-  Select plan
+  <strong>Select plan</strong>
+
   </li>
   
-<li>
+<li class="nav-item">
   Step 3<br>
-  Add-ons
+  <strong>Add-ons</strong>
+
 </li>
-<li>
+<li class="nav-item">
   Step 4<br>
-  Summary
+  <strong>Summary</strong>
+
   </li>
   </ul>
 </nav>
 </div>
   <!-- Sidebar end -->
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 mx-auto">
 
   <!-- Step 1 start -->
-  <form>
+  <form w-75>
 
     <div id="step1">
   <h1>Personal info</h1>
@@ -57,13 +60,13 @@
   </p>
 
   <label class="form-label">Name</label>
-  <input class="form-control" placeholder="e.g. Stephen King">
+  <input type="text" class="form-control" placeholder="e.g. Stephen King">
 
 <label class="form-label">Email Address</label>
-  <input class="form-control" placeholder="stephenking@lorem.com">
+  <input type="email" class="form-control" placeholder="stephenking@lorem.com">
 
   <label class="form-label">Phone Number</label>
-  <input class="form-control" placeholder="+1 234 567 890">
+  <input type="tel" class="form-control" placeholder="+1 234 567 890">
 
   <button class="btn btn-primary float-end">
   Next Step
